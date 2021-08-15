@@ -133,11 +133,11 @@ SSH into the control node and follow the steps below:
 - Copy the filebeat-config.yml file to /etc/ansible/files/filebeat-config.yml.
 
 - Update the filebeat-config.yml file to include...
-  output.elasticsearch:
-  hosts: ["10.1.0.4:9200"]
+  - output.elasticsearch:
+  - hosts: ["10.0.0.4:9200"]
 
-  setup.kibana:
-  host: "10.1.0.4:5601"
+  - setup.kibana:
+  - host: "10.0.0.4:5601"
 
 - Run the playbook, and navigate to http://[your.VM.IP]:5601/app/kibana to check that the installation worked as expected.
 
