@@ -5,11 +5,12 @@ Designing and implementing an ELK Stack to collect logs ,synthesize complex sear
 
 The files in this repository were used to configure the network depicted below.
 
-![ELK-Project](Diagrams/ELK-Project.png)
+![ELK-Project](/Diagrams/ELK-Project.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the #playbook file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
+ - File Beat Playbook [Link](Ansible/filebeat-playbook.yml)
+ - Install ELK Playbook [Link](Ansible/install-elk.yml)
 
 This document contains the following details:
 - Description of the Topologu
@@ -92,7 +93,7 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 We can manage multi-tier deployments very easily using Ansible.
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+- _ In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
 
 The playbook has the following tasks:
 - ...Install Docker.io - The Docker engine, used for running containers
@@ -108,7 +109,7 @@ Configures the container to start with the following port mappings:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-!Screenshot of docker ps output](Diagrams/docker_ps.jpg)
+![Screenshot of docker ps output](Diagrams/docker_ps.JPG)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -140,9 +141,9 @@ SSH into the control node and follow the steps below:
 
 - Run the playbook, and navigate to http://[your.VM.IP]:5601/app/kibana to check that the installation worked as expected.
 
-!Screenshot of Kibana Home Page](Diagrams/Kibana-homepage.jpg)
-!Screenshot of Filebeat Status Page](Diagrams/Filebeat-Status.JPG)
-!Screenshot of Filebeat Output Page](Diagrams/Filebeat-Output.JPG)
+![Screenshot of Kibana Home Page](Diagrams/Kibana-homepage.JPG)
+![Screenshot of Filebeat Status Page](Diagrams/Filebeat-Status.JPG)
+![Screenshot of Filebeat Output Page](Diagrams/Filebeat-Output.JPG)
 
 
 _ Answer the following questions to fill in the blanks:_
